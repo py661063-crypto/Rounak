@@ -1,0 +1,6 @@
+{
+  "name": "Priy Study",
+  "description": "An educational Android companion app featuring a premium dark navy and electric blue interface, AdMob-verified ad flow, and configurable Sigma Study app launching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

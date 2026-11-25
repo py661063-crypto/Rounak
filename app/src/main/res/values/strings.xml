@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Priy Study</string>
+    <string name="app_subtitle">Smart Study Gateway</string>
+    <string name="welcome_title">Welcome to Priy Study</string>
+    <string name="welcome_subtitle">Your distraction-free educational companion to verify ad support and launch Sigma Study seamlessly.</string>
+
+    <!-- Home Screen -->
+    <string name="sigma_card_title">Sigma Study Access</string>
+    <string name="sigma_card_subtitle">Launch the installed Sigma Study Android app directly to its Home Screen.</string>
+    <string name="sigma_status_installed">Installed &amp; Ready</string>
+    <string name="sigma_status_no_launcher">Installed (No Launcher)</string>
+    <string name="sigma_status_not_installed">Not Installed</string>
+    <string name="sigma_status_not_configured">Package Not Configured</string>
+    <string name="sigma_package_label">Target Package</string>
+    <string name="sigma_package_unconfigured_hint">Set your verified Sigma Study package name in Integration Settings before launching.</string>
+    <string name="sigma_not_installed_message">Sigma Study (%1$s) was not detected on this device. Install Sigma Study from its official source or verify its package ID in Integration Settings.</string>
+    <string name="sigma_no_launcher_message">Package %1$s is installed, but does not expose a standard Home Screen launcher activity.</string>
+    <string name="action_open_sigma_study">Open Sigma Study</string>
+    <string name="action_official_website">Official Website</string>
+    <string name="action_configure_integration">Configure</string>
+    <string name="action_refresh_status">Refresh installation status</string>
+    <string name="action_open_settings">Integration Settings</string>
+
+    <!-- Advertisement Section & Screen -->
+    <string name="ad_section_badge">AD</string>
+    <string name="ad_section_label">Sponsored Banner</string>
+    <string name="ad_loading_text">Loading Google Mobile Ads…</string>
+    <string name="ad_unavailable_title">Ad Network Ready</string>
+    <string name="ad_retry_button">Reload Ad</string>
+    <string name="ad_screen_title">Sponsor Verification</string>
+    <string name="ad_screen_subtitle">Complete an approved ad below. Continue unlocks only after the ad network confirms completion.</string>
+    <string name="ad_workflow_step_1">1. View Ad</string>
+    <string name="ad_workflow_step_2">2. Confirmed</string>
+    <string name="ad_workflow_step_3">3. Launch App</string>
+    <string name="ad_rewarded_card_title">Approved Ad Verification</string>
+    <string name="ad_rewarded_loading">Requesting verified rewarded ad from AdMob…</string>
+    <string name="ad_rewarded_ready">Approved ad is loaded and ready to view.</string>
+    <string name="ad_rewarded_showing">Ad is playing. Complete the ad to unlock Continue.</string>
+    <string name="ad_rewarded_confirmed">Ad completion confirmed by the ad network.</string>
+    <string name="ad_rewarded_dismissed_early">Ad was closed before completion. Please finish the ad to unlock Continue.</string>
+    <string name="ad_rewarded_failed">Unable to load ad from network: %1$s</string>
+    <string name="action_watch_approved_ad">Watch Approved Ad</string>
+    <string name="action_retry_ad_load">Retry Ad Load</string>
+    <string name="action_continue_to_sigma">Continue to Sigma Study</string>
+    <string name="action_complete_ad_first">Complete Ad to Continue</string>
+
+    <!-- External URL Shortener -->
+    <string name="shortener_card_title">External HTTPS URL Shortener</string>
+    <string name="shortener_configured_subtitle">Configured HTTPS link: %1$s</string>
+    <string name="shortener_unconfigured_subtitle">Optional: Configure an approved HTTPS URL shortener in Integration Settings to support web-based sponsor redirects.</string>
+    <string name="shortener_waiting_callback">External link opened. Waiting for verified return callback (priystudy://ad-callback?status=completed).</string>
+    <string name="action_open_shortener_url">Open External Ad Link</string>
+
+    <!-- About & Version -->
+    <string name="about_section_title">About &amp; App Info</string>
+    <string name="about_app_version_format">Version %1$s (Build %2$d)</string>
+    <string name="about_package_format">Package ID: %1$s</string>
+    <string name="about_compliance_body">Priy Study launches Sigma Study through standard Android intents to its normal Home Screen. It respects official logins, activation codes, ads, and access controls, and never shares authentication tokens.</string>
+
+    <!-- Settings / Integration Configuration -->
+    <string name="settings_title">Integration Settings</string>
+    <string name="settings_subtitle">Configure and verify your Sigma Study package ID, optional deep link, official website, and HTTPS URL shortener.</string>
+    <string name="settings_sigma_package_label">Sigma Study Package Name</string>
+    <string name="settings_sigma_package_placeholder">e.g. com.vendor.sigmastudy</string>
+    <string name="settings_sigma_deeplink_label">Optional Deep Link URI (Future API)</string>
+    <string name="settings_sigma_deeplink_placeholder">e.g. sigmastudy://home</string>
+    <string name="settings_official_website_label">Official Website (HTTPS)</string>
+    <string name="settings_official_website_placeholder">https://example.com</string>
+    <string name="settings_shortener_url_label">External URL Shortener (HTTPS)</string>
+    <string name="settings_shortener_url_placeholder">https://short.example.com/study</string>
+    <string name="settings_verification_title">How to Verify Sigma Study Package ID</string>
+    <string name="settings_verification_steps">1. Open Sigma Study on Google Play and tap Share → Copy Link. The package name is the value after ?id=.\n2. Or connect via USB and run: adb shell pm list packages | grep -i sigma\n3. Only enter HTTPS URLs you own or have verified.</string>
+    <string name="action_save_settings">Save Configuration</string>
+    <string name="action_reset_settings">Reset</string>
+    <string name="action_navigate_back">Navigate back</string>
+
+    <!-- Errors & Messages -->
+    <string name="error_invalid_package_name">Enter a valid Android package name (e.g. com.example.app)</string>
+    <string name="error_invalid_https_url">URL must start with https:// and include a valid domain</string>
+    <string name="error_invalid_deeplink">Deep link must use a valid URI scheme (http/https/custom)</string>
+    <string name="error_no_browser">No compatible web browser found to open this HTTPS link</string>
+    <string name="error_website_not_configured">Official website URL is not configured yet. Add a verified HTTPS URL in Integration Settings.</string>
+    <string name="error_launch_failed">Could not launch Sigma Study. Verify it is installed and check Integration Settings.</string>
+    <string name="snackbar_config_saved">Integration configuration saved</string>
+    <string name="snackbar_config_reset">Configuration cleared</string>
+</resources>
